@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>John S. Sargent | Booking</title> 
+    
+      <link href="style2.css" rel="stylesheet">
+    
+  </head>
+
+<body>
+  <div class="header">
+      <div class="logo">
+          <a href="index.html"><img src="Website/Logo.png" style="float:left;width:221px;height:65px" title="Return to John S. Sargent Home Page"></a>
+      </div>
+  </div>
+    
+  <div class="topnav">
+      <div class="centre">
+        <a>Art & Artists</a>
+        <a>About</a>
+        <a>Viewing</a>
+      </div>
+  </div>
+
+  <div class="main">
+    <?php
+      include 'form.php';
+      if(!$fname) {
+      $fname = null
+      }
+      if(!$lname) {
+      $lname = null
+      }
+      if(!$date) {
+      $date = null
+      }
+      if(!$Artwork) {
+      $Artwork = null
+      }
+      echo "<div class="SuccessfulBooking">
+              <p>Felix Gregory has been successfully booked in to view: Henry James on: 04/04/23</p>
+            </div>";
+    ?>
+  </div>
+</body>
+
+</html>

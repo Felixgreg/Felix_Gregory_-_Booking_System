@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>John S. Sargent | Booking</title> 
+    
+      <link href="style.css" rel="stylesheet">
+    
+  </head>
+
+<body>
+  <div class="header">
+      <div class="logo">
+          <a href="index.html"><img src="Website/Logo.png" style="float:left;width:221px;height:65px" title="Return to John S. Sargent Home Page"></a>
+      </div>
+  </div>
+    
+  <div class="topnav">
+      <div class="centre">
+        <a>Art & Artists</a>
+        <a>About</a>
+        <a>Viewing</a>
+      </div>
+  </div>
+
+  <div class="main">
+
+    <div class="slideshow-container">
+      
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 12</div>
+          <img src="Website/S00001.png" style="width:400px">
+          <div class="text">Lady Agnew of Lochnaw - John Singer Sargent, 1892</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 12</div>
+          <img src="Website/S00002.png" style="width:400px">
+          <div class="text">Madame X - John Singer Sargent, 1884</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 12</div>
+          <img src="Website/S00003.png" style="width:400px">
+          <div class="text">Asher Wertheimer - John Singer Sargent, 1898</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 12</div>
+          <img src="Website/S00004.png" style="width:400px">
+          <div class="text">Hylda, Almina and Conway, Children of Asher Wertheimer - John Singer Sargent, 1905</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 12</div>
+          <img src="Website/S00005.png" style="width:400px">
+          <div class="text">Carnation, Lily, Lily, Rose - John Singer Sargent, 1886</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 12</div>
+          <img src="Website/S00006.png" style="width:400px">
+          <div class="text">Ellen Terry as Lady Macbeth - John Singer Sargent, 1889</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 12</div>
+          <img src="Website/S00007.png" style="width:400px">
+          <div class="text">Henry James - John Singer Sargent, 1913</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 12</div>
+          <img src="Website/S00008.png" style="width:400px">
+          <div class="text">Mrs Wertheimer - John Singer Sargent, 1904</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 12</div>
+          <img src="Website/S00009.png" style="width:400px">
+          <div class="text">Rose-Marie Ormond - John Singer Sargent, 1912</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">10 / 12</div>
+          <img src="Website/S00010.png" style="width:400px">
+          <div class="text">La Carmencita - John Singer Sargent, 1890</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">11 / 12</div>
+          <img src="Website/S00011.png" style="width:400px">
+          <div class="text">Edward, Son of Asher Wertheimer - John Singer Sargent, 1902</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">12 / 12</div>
+          <img src="Website/S00012.png" style="width:400px">
+          <div class="text">William M Chase - John Singer Sargent, 1902</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+      </div>
+
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+    
+    <div class="centre">
+      <form method="post" action="form.php">
+        <div class="date">
+          <label for="dateAndTitle">Choose Date:</label>
+          <select id="date" name="date">
+            <option value="01/04/23" selected>01/04/23</option>
+            <option value="02/04/23">02/04/23</option>
+            <option value="03/04/23">03/04/23</option>
+            <option value="04/04/23">04/04/23</option>
+            <option value="05/04/23">05/04/23</option>
+            <option value="06/04/23">06/04/23</option>
+            <option value="07/04/23">07/04/23</option>
+            <option value="08/04/23">08/04/23</option>
+            <option value="09/04/23">09/04/23</option>
+            <option value="10/04/23">10/04/23</option>
+            <option value="11/04/23">11/04/23</option>
+            <option value="12/04/23">12/04/23</option>
+            <option value="13/04/23">13/04/23</option>
+            <option value="14/04/23">14/04/23</option>
+            <option value="15/04/23">15/04/23</option>
+            <option value="16/04/23">16/04/23</option>
+            <option value="17/04/23">17/04/23</option>
+            <option value="18/04/23">18/04/23</option>
+            <option value="19/04/23">19/04/23</option>
+            <option value="20/04/23">20/04/23</option>
+            <option value="21/04/23">21/04/23</option>
+            <option value="22/04/23">22/04/23</option>
+            <option value="23/04/23">23/04/23</option>
+            <option value="24/04/23">24/04/23</option>
+            <option value="25/04/23">25/04/23</option>
+            <option value="26/04/23">26/04/23</option>
+            <option value="27/04/23">27/04/23</option>
+            <option value="28/04/23">28/04/23</option>
+            <option value="29/04/23">29/04/23</option>
+            <option value="30/04/23">30/04/23</option>
+          </select>
+        </div>
+        <div class="Title">
+          <label for="artwork">Choose Artwork:</label>
+          <select id="artwork" name="artwork">
+            <option value="S00001" selected>Lady Agnew of Lochnaw</option>
+            <option value="S00002">Madame X</option>
+            <option value="S00003">Asher Wertheimer</option>
+            <option value="S00004">Hylda, Almina and Conway, Children of Asher Wertheimer</option>
+            <option value="S00005">Carnation, Lily, Lily, Rose</option>
+            <option value="S00006">Ellen Terry as Lady Macbeth</option>
+            <option value="S00007">Henry James</option>
+            <option value="S00008">Mrs Wertheimer</option>
+            <option value="S00009">Rose-Marie Ormond</option>
+            <option value="S00010">La Carmencita</option>
+            <option value="S00011">Edward, Son of Asher Wertheimer</option>
+            <option value="S00012">William M Chase</option>
+          </select>
+        </div>
+        <br>
+        <div class="centre">
+          <div class="name_1">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname">
+          </div>
+          <div class="name_2">
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+            <input type="submit" name="submit" id="submit" value="Submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

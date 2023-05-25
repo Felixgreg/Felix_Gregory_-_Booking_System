@@ -1,0 +1,148 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Website/TateNewPro-Thin.8b266f19ed2a.woff);
+  font-weight: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: myFirstFont;
+  letter-spacing: .11em;
+  height: 100%;
+}
+
+body {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #ffffff;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo {
+  height: 65px;
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-top: 1px dotted #94928d;
+  height: 49px;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.topnav a:hover {
+  color: #0072ce;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid #0072ce;
+  color: #000000;
+}
+
+.centre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 26px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.main {
+  padding-top: 1px;
+  background-color: #f8f7f5;
+  width: 100%;
+  height: 850px;
+}
+
+.slideshow-container {
+  padding-top: 30px;
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -10px;
+  width: auto;
+  text-align: center;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+.date {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name_2 {
+  padding-left: 20px;
+}
